@@ -1,0 +1,9 @@
+3 5 n:3 res:0
+4 n zero stop 
+5 n zero 27
+2 n odd n
+1 odd two odd 
+1 counter one counter
+3 9
+2 counter one res 9
+odd:1 counter:0 zero:0 one:1 two:2 stop:9  
