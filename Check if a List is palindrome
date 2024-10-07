@@ -1,0 +1,19 @@
+3 6 first_element_location:57 length:4 result:1
+checkForLength:5 one length check
+isPalindrome:0 2 result 3 stop
+check:7 first_element_location fcursor
+
+2 length one length1
+1 first_element_location length1 bcursor
+
+check2:5 bcursor fcursor isPalindrome
+7 fcursor f_index
+7 bcursor b_index
+4 f_index:0 b_index:0 move_the_cursor
+3 stop 
+move_the_cursor:1 fcursor one fcursor
+2 bcursor one bcursor 3 check2
+
+stop:9
+one:1 length1:0 fcursor:0 bcursor:0
+1 3 3 1
