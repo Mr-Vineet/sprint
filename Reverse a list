@@ -1,0 +1,31 @@
+3 5 first_element_location:64 length:5
+
+7 first_element_location fCursor
+2 length one lengthMinusOne
+1 first_element_location
+  lengthMinusOne bCursor
+4 length zero stop 
+check:5 bCursor fCursor stop
+
+
+7 fCursor des1
+7 des1:0 index1
+
+7 bCursor des3
+7 fCursor des4
+7 des3:0 des4:0
+
+7 bCursor des5
+7 index1 des5:0
+
+1 fCursor one fCursor
+2 bCursor one bCursor 3 check
+
+
+ 
+
+index1:0
+stop:9
+lengthMinusOne:0
+fCursor:0 bCursor:0
+one:1 counter:0 zero:0 temp:0 
