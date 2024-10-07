@@ -1,0 +1,14 @@
+3 5 number:123 result:0 
+6 number 
+7 number rem 
+check:5 rem div jump
+2 rem div rem 
+1 quotient one quotient 3 check
+jump:1 result rem result
+7 quotient rem 
+0 0 quotient
+4 rem zero stop
+3 check
+
+stop:9
+one:1 rem:0 quotient:0 div:10 zero:0
