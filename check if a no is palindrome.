@@ -1,0 +1,20 @@
+3 start num:12321 div:10 is_palindrome:0 zero:0 rev:0 mul:0 quotient:0 one:1 count:10 rem:0
+
+start:7 num rem
+check1:5 rem one check_for_palindrome
+check2:5 rem div jump_multiply
+2 rem div rem 
+1 quotient one quotient 3 check2
+jump_multiply:4 count one jump 
+1 rev mul rev
+2 count one count 3 jump_multiply
+jump:1 rev rem rev
+7 quotient rem 
+7 zero quotient
+7 div count 
+7 rev mul
+3 check1 
+check_for_palindrome:4 rev num jump1
+stop:9
+jump1:1 is_palindrome one is_palindrome
+3 stop
