@@ -1,0 +1,162 @@
+3 start 
+
+starting_of_program:434
+instr:0 
+zero:0 one:1 two:2 three:3 four:4 five:5 seven:7 nine:9 mul:10 divide:11
+
+start:7 starting_of_program cursor
+
+jump:7 cursor:0 instr
+
+4 instr three do3 
+
+4 instr nine do9 
+
+4 instr seven do7
+
+4 instr one do1
+
+4 instr two do2
+
+4 instr four do4
+
+4 instr five do5
+
+4 instr zero do0
+
+4 instr mul do10
+
+4 instr divide do11
+
+3 stop
+
+do3:1 cursor one cursor 
+7 cursor operand3
+
+2 operand3:0 one operand3
+1 starting_of_program operand3 cursor
+3 jump
+
+do9:3 stop
+
+do7:1 cursor one cursor
+7 cursor temp
+2 temp:0 one temp
+1 starting_of_program temp temp1
+
+1 cursor one cursor
+7 cursor temp2
+2 temp2:0 one temp2
+1 starting_of_program temp2 temp3
+
+7 temp1:0 temp3:0 
+1 cursor one cursor
+3 jump
+
+do1:1 cursor one cursor
+7 cursor n1 
+2 n1:0 one n1
+1 starting_of_program n1 num1
+
+1 cursor one cursor
+7 cursor n2 
+2 n2:0 one n2
+1 starting_of_program n2 num2
+
+1 cursor one cursor
+7 cursor n3 
+2 n3:0 one n3
+1 starting_of_program n3 num3
+
+add:1 num1:0 num2:0 num3:0 
+0 1 add 
+1 cursor one cursor
+3 jump
+
+do2:0 2 add 3 do1
+
+do4:1 cursor one cursor
+7 cursor left_side_no 
+2 left_side_no:0 one left_side_no
+1 starting_of_program left_side_no left_side_no1
+
+1 cursor one cursor
+7 cursor right_side_no 
+2 right_side_no:0 one right_side_no
+1 starting_of_program right_side_no right_side_no1
+
+compare:4 left_side_no1:0 right_side_no1:0 true
+1 cursor two cursor
+0 4 compare
+3 jump
+
+true:1 one cursor cursor
+7 cursor jump_no  
+2 jump_no:0 one jump_no 
+1 starting_of_program jump_no cursor 
+0 4 compare
+3 jump
+
+do5:0 5 compare 3 do4
+
+do0:1 one cursor cursor
+7 cursor put_value 
+
+1 cursor one cursor
+7 cursor put_loc
+2 put_loc:0 one put_loc
+1 starting_of_program put_loc put_loc1
+
+7 put_value:0 put_loc1:0
+
+do10:1 cursor one cursor
+7 cursor m1 
+2 m1:0 one m1
+1 starting_of_program m1 mul1
+
+1 cursor one cursor
+7 cursor m2 
+2 m2:0 one m2
+1 starting_of_program m2 mul2
+
+1 cursor one cursor
+7 cursor store 
+2 store:0 one store
+1 starting_of_program store STORE
+
+check_for_mul:5 mul2:0 counter move
+1 mul1:0 temp_res temp_res
+1 counter one counter 
+3 check_for_mul
+move:7 temp_res STORE:0
+1 cursor one cursor
+0 0 temp_res 0 1 counter
+3 jump
+
+do11:1 cursor one cursor
+7 cursor d1 
+2 d1:0 one d1
+1 starting_of_program d1 div1
+
+1 cursor one cursor
+7 cursor d2 
+2 d2:0 one d2
+1 starting_of_program d2 div2
+
+1 cursor one cursor
+7 cursor quotient 
+2 quotient:0 one quotient
+1 starting_of_program quotient QUOTIENT
+7 div1:0 Dividend
+7 div2:0 Divisor 
+check_for_div:5 Dividend Divisor move1
+2 Dividend Divisor Dividend
+1 counter1 one counter1 
+3 check_for_div
+move1:7 counter1 QUOTIENT:0
+1 cursor one cursor 
+0 0 counter1
+3 jump
+
+stop:9 counter:1 temp_res:0 counter1:0 Dividend:0 Divisor:0 
+3 9 2 3 0 10 5 0 10 3 4 5 11 6 7 8 11 4 3 5 9 
