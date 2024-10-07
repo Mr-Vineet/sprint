@@ -1,0 +1,9 @@
+3 start:check num:25 sqrt_of_num:0
+check:4 num zero stop 
+check1:5 num zero yes
+2 num odd num
+1 odd two odd 
+1 counter one counter
+3 check1
+yes:2 counter one sqrt_of_num 3 stop
+odd:1 counter:0 zero:0 one:1 two:2 stop:9
